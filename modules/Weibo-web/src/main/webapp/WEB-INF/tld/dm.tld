@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<taglib  xmlns="http://java.sun.com/xml/ns/javaee"
+ 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+ 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+	version="2.1">
+	
+ <description>DM JSP Tag Library</description>
+ <display-name>DM Tags</display-name>
+ <tlib-version>1.0</tlib-version>
+ <short-name>dm</short-name>
+ <uri>http://db.vancldb.com/tags</uri>
+ 
+ <tag>
+ 	<name>bind</name>
+ 	<tag-class>com.vancl.dm.web.tag.BindTag</tag-class>
+ 	<body-content>empty</body-content>
+ 	<attribute>
+ 		<name>var</name>
+ 		<type>java.lang.String</type>
+ 		<required>true</required>
+ 		<description>the attribute name you want</description>
+ 	</attribute>
+ 	 <attribute>
+ 		<name>type</name>
+ 		<type>java.lang.String</type>
+ 		<required>true</required>
+ 		<description>the class full name</description>
+ 	</attribute>
+ 	 	<attribute>
+ 		<name>field</name>
+ 		<type>java.lang.String</type>
+ 		<required>true</required>
+ 		<description>the field name of the type</description>
+ 	</attribute>
+ </tag>
+ 
+</taglib>
